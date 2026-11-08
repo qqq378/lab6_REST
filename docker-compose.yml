@@ -1,0 +1,7 @@
+services:
+  audit-service:
+    build: .
+    container_name: audit-service
+    ports:
+      - "8000:8000"
+    restart: unless-stopped
